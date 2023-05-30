@@ -12,11 +12,11 @@ import ru.alishev.springcourse.FirstSecurityApp.security.PersonDetails;
 import java.util.Optional;
 
 @Service
-public class PersonDetailService implements UserDetailsService {
+public class PersonDetailsService implements UserDetailsService {
     private final PeopleRepository peopleRepository;
 
     @Autowired
-    public PersonDetailService(PeopleRepository peopleRepository) {
+    public PersonDetailsService(PeopleRepository peopleRepository) {
         this.peopleRepository = peopleRepository;
     }
 
